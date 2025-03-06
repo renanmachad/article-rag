@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:20
+    working_dir: /src
+    volumes:
+      - .:/src
+    command: sh -c "npm install && npm i -D tsx && ls && npx tsx src/server.ts"
+    environment:
+      - NODE_ENV=development
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PINECONE_API_KEY=${PINECONE_API_KEY}
+      - PINECONE_ENVIRONMENT=${PINECONE_ENVIRONMENT} # Adicione o ambiente do Pinecone
+    ports:
+      - "8080:8080"
+  

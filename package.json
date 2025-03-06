@@ -1,0 +1,32 @@
+{
+  "name": "article-rag",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npx ts-node src/server.ts"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.23.0",
+    "@mozilla/readability": "^0.6.0",
+    "@pinecone-database/pinecone": "^5.1.1",
+    "axios": "^1.8.1",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "jsdom": "^26.0.0",
+    "kafkajs": "^2.2.4",
+    "langchain": "^0.3.19"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.13.9",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "description": ""
+}
