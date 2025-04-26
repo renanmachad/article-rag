@@ -1,6 +1,8 @@
 # Article RAG
 
 This project is a Node.js application that utilizes Fastify, Kafka, and Pinecone to process and store article data.
+Have objetive to store article data in a database vector,
+and when users interact with a prompt we made a RAG process to return an response about the articles
 
 ## Prerequisites
 
